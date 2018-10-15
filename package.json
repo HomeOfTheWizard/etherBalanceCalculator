@@ -4,22 +4,41 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "jest": "jest --env=node",
+    "test": "mocha",
+    "start": "node server.js",
+    "dev": "nodemon --watch src server.js"
+  },
+  "jest": {
+    "automock": false
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.17.5"
+    "chai": "^4.1.2",
+    "chai-bignumber": "^2.0.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.5",
+    "sinon": "^6.1.4",
+    "supertest": "^3.1.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "bignumber.js": "^7.2.1",
     "body-parser": "^1.18.3",
+    "celebrate": "^8.0.0",
+    "collections": "^5.1.5",
+    "deep-equal": "^1.0.1",
     "express": "^4.16.3",
+    "helmet": "^3.12.1",
+    "jest": "^23.4.2",
+    "joi-date-extensions": "^1.2.0",
     "moment": "^2.22.2",
     "mongoose": "^5.1.5",
+    "morgan": "^1.9.0",
+    "request-promise": "^4.2.2",
     "underscore": "^1.9.1",
+    "url-join": "^4.0.0",
     "web3": "^1.0.0-beta.26"
   }
 }

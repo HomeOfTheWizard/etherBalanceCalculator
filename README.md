@@ -35,3 +35,6 @@ Go to the test folder, where we have a test request payload (postRequestTestInvo
 
 2)Test with nodeJS: (if you use docker, change the IP in URL used in testAPI.js )
   node testAPI.js
+
+3)Test with the functional blackbox testing present in the folder /test/end-to-end
+  npm test /test/end-to-end/testInvoiceApi.js
